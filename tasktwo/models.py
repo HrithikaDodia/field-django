@@ -10,9 +10,6 @@ class FieldEncrypt(models.Model):
     original_char_file = None
     original_file_up = None
 
-    def str(self):
-        return self.char_file
-
     def __init__(self, *args, **kwargs):
         super(FieldEncrypt, self).__init__(*args, **kwargs)
         self.original_char_file = self.char_file

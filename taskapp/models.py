@@ -8,9 +8,8 @@ class FieldUpload(models.Model):
     original_enter_char = None
     original_file_upload = None
 
-    def str(self):
+    def __str__(self):
         return self.enter_char
-
 
     def __init__(self, *args, **kwargs):
         super(FieldUpload, self).__init__(*args, **kwargs)
